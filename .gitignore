@@ -1,0 +1,45 @@
+# === By android studio ===
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# === Android / Gradle ===
+/.gradle/
+/build/
+**/build/
+/local.properties
+/.idea/
+/captures/
+/outputs/
+/*.iml
+
+# === OS spécifiques ===
+.DS_Store
+Thumbs.db
+
+# === Android Studio ===
+.idea
+*.iml
+
+# === Logs ===
+*.log
+
+# === Keystore (ne jamais commit les clés de signature) ===
+*.jks
+*.keystore
+
+# === Profilage / rapports ===
+*.hprof
+
