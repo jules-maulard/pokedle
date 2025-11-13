@@ -10,5 +10,16 @@ public enum PokemonHabitat {
     SEA,
     URBAN,
     WATERS_EDGE,
-    UNKNOWN
+    UNKNOWN;
+
+    public static PokemonHabitat fromString(String habitatName) {
+        if (habitatName == null) return UNKNOWN;
+
+        try {
+            // la PokéAPI renvoie parfois "waters-edge" → on le convertit proprement
+            return PokemonHabitat.valueOf(habitatName.toUpperCase().replace("-", "_"));
+        } catch (IllegalArgumentException e) {
+            return UNKNOWN;
+        }
+    }
 }

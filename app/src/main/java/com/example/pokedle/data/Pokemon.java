@@ -8,11 +8,12 @@ public class Pokemon {
     private int evolutionState;
     private int height;
     private int weight;
+    private int gen;
     private PokemonHabitat habitat;
     private String imageUrl;
 
     public Pokemon(int id, String name, PokemonType[] type, PokemonColor[] color,
-                   int evolutionState, int height, int weight,
+                   int evolutionState, int height, int weight, int gen,
                    PokemonHabitat habitat, String imageUrl) {
         this.id = id;
         this.name = name;
@@ -21,6 +22,7 @@ public class Pokemon {
         this.evolutionState = evolutionState;
         this.height = height;
         this.weight = weight;
+        this.gen = gen;
         this.habitat = habitat;
         this.imageUrl = imageUrl;
     }

@@ -20,5 +20,13 @@ public enum PokemonType {
     STEEL,
     FAIRY,
     STELLAR,
-    UNKNOWN
+    UNKNOWN;
+
+    public static PokemonType fromString(String typeName) {
+        try {
+            return PokemonType.valueOf(typeName.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            return UNKNOWN;
+        }
+    }
 }

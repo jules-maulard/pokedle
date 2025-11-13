@@ -11,5 +11,13 @@ public enum PokemonColor {
     RED,
     WHITE,
     YELLOW,
-    UNKNOWN
+    UNKNOWN;
+
+    public static PokemonColor fromString(String colorName) {
+        try {
+            return PokemonColor.valueOf(colorName.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            return UNKNOWN;
+        }
+    }
 }
